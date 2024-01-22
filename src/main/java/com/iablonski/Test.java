@@ -8,15 +8,15 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-//        if (args.length != 1) {
-//            System.out.println("java -jar {название проекта}.jar тестовый-файл.txt");
-//            return;
-//        }
-//
-//        String inputFilePath = args[0];
+        if (args.length != 1) {
+            System.out.println("java -jar {название проекта}.jar тестовый-файл.txt");
+            return;
+        }
+
+        String inputFilePath = args[0];
         long startTime = System.currentTimeMillis();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("test.txt"));
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
              PrintWriter writer = new PrintWriter("output-lng.txt")) {
             // Хранит строки в Set (каждый представляет из себя группу с совпадениями)
             List<Set<String>> groupsOfStrings = new ArrayList<>();
