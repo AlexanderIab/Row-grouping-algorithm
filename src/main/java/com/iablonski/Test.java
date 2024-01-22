@@ -138,7 +138,6 @@ public class Test {
     }
 
     private static String[] extractColumns(String line) {
-        if(line.isEmpty()) return new String[0];
         StringBuilder result = new StringBuilder(line.length());
 
         boolean inQuotes = false;
