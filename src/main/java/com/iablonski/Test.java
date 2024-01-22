@@ -8,15 +8,15 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        if (args.length != 1) {
-            System.out.println("java -jar {название проекта}.jar тестовый-файл.txt");
-            return;
-        }
-
-        String inputFilePath = args[0];
+//        if (args.length != 1) {
+//            System.out.println("java -jar {название проекта}.jar тестовый-файл.txt");
+//            return;
+//        }
+//
+//        String inputFilePath = args[0];
         long startTime = System.currentTimeMillis();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
+        try (BufferedReader reader = new BufferedReader(new FileReader("test.txt"));
              PrintWriter writer = new PrintWriter("output-lng.txt")) {
             // Хранит строки в Set (каждый представляет из себя группу с совпадениями)
             List<Set<String>> groupsOfStrings = new ArrayList<>();
@@ -138,6 +138,7 @@ public class Test {
     }
 
     private static String[] extractColumns(String line) {
+        if(line.isEmpty()) return new String[0];
         StringBuilder result = new StringBuilder(line.length());
 
         boolean inQuotes = false;
