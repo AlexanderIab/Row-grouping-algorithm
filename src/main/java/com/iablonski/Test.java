@@ -24,7 +24,8 @@ public class Test {
             List<Map<String, Integer>> columnValuesAndGroupNumbers = new ArrayList<>();
 
             String line;
-            while ((line = reader.readLine()) != null && !line.isEmpty()) {
+            while ((line = reader.readLine()) != null) {
+                if (line.isEmpty()) continue;
                 // Разбираем строку на столбцы
                 String[] columnValues = extractColumns(line);
                 // Ищем номер группы для строки
