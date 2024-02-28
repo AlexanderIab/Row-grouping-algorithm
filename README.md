@@ -25,5 +25,5 @@ Group 2
 - "";"";"2"
 
 Duplicate values are removed, matching only non-empty strings.
-Group 1 - common "2" in the first and second line
-Group 2 - common "4" in the first and second line and "2" in the second and third line
+- Group 1 - common "2" in the first and second line
+- Group 2 - common "4" in the first and second line and "2" in the second and third line
