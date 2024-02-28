@@ -1,6 +1,6 @@
 (./)mvnw.cmd clean install
 
-java -Xmx1G -jar target\TestTaskJob-1.0-SNAPSHOT.jar lng-big.txt
+java -Xmx1G -jar target\TestTaskJob-1.0-SNAPSHOT.jar big-data.csv
 
 The algorithm was created for grouping large data (over 100,000 rows) - limit 1 GB
 
