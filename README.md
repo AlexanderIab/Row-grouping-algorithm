@@ -6,7 +6,7 @@ The algorithm was created for grouping large data (over 100,000 rows) - memory c
 
 Example:
 
-- "1";"2";""
+- "12.1";"2";""
 - "1";"2";""
 - "3";"2";""
 - "4";"6";"";"2";""
@@ -16,7 +16,7 @@ Example:
 Output:
 
 Group 1
-- "1";"2";""
+- "12.1";"2";""
 - "3";"2";""
 
 Group 2
