@@ -2,7 +2,7 @@
 
 java -Xmx1G -jar target\TestTaskJob-1.0-SNAPSHOT.jar big-data.csv
 
-The algorithm was created for grouping large data (over 100,000 rows) - limit 1 GB
+The algorithm was created for grouping large data (over 100,000 rows) - memory consumption limit 1 GB
 
 Example:
 
